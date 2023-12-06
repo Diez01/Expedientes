@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expedientes de un periodista</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Expedientes de un periodista</h1>
+  </header>
+
+  <div id="contenedor">
+    <div id="informacion-general">
+      <h2>CONTEXTO DEL PROYECTO</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste officiis. Officia dolore, eligendi possimus explicabo qui ipsum atque? Impedit molestiae hic pariatur voluptas blanditiis quae est, in facere accusantium?</p>
+    </div>
+
+    <div id="contenido-secreto">
+      <div class="pestañas">
+        <div class="pestaña" onclick="mostrarContenido(0)">Constitución y comunicación</div>
+        <div class="pestaña" onclick="mostrarContenido(1)">Secreto profecional del periodista</div>
+        <div class="pestaña" onclick="mostrarContenido(2)">Censura y autocensura</div>
+        <div class="pestaña" onclick="mostrarContenido(3)">Infancias y medios de comunicación</div>
+        <div class="pestaña" onclick="mostrarContenido(4)">Derechos de las audiencias</div>
+      </div>
+
+      <div class="contenido-pestaña" id="contenido1">
+        <p>Contenido de la Pestaña 1.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste officiis. Officia dolore, eligendi possimus explicabo qui ipsum atque? Impedit molestiae hic pariatur voluptas blanditiis quae est, in facere accusantium?</p>
+      </div>
+
+      <div class="contenido-pestaña" id="contenido2">
+        <h1>Secreto profesional del periodista</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste officiis. Officia dolore, eligendi possimus explicabo qui ipsum atque? Impedit molestiae hic pariatur voluptas blanditiis quae est, in facere accusantium?</p>
+      </div>
+
+      <div class="contenido-pestaña" id="contenido3">
+        <p>Contenido de la Pestaña 3.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste officiis. Officia dolore, eligendi possimus explicabo qui ipsum atque? Impedit molestiae hic pariatur voluptas blanditiis quae est, in facere accusantium?</p>
+      </div>
+
+      <div class="contenido-pestaña" id="contenido4">
+        <p>Contenido de la Pestaña 4.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste officiis. Officia dolore, eligendi possimus explicabo qui ipsum atque? Impedit molestiae hic pariatur voluptas blanditiis quae est, in facere accusantium?</p>
+      </div>
+
+      <div class="contenido-pestaña" id="contenido5">
+        <p>Contenido de la Pestaña 5.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste officiis. Officia dolore, eligendi possimus explicabo qui ipsum atque? Impedit molestiae hic pariatur voluptas blanditiis quae est, in facere accusantium?</p>
+      </div>
+
+      <div id="mensaje-secreto">
+        <h2>TOP SECRET</h2>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

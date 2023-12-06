@@ -1,0 +1,115 @@
+body {
+  background-color: #8793eb; /* Fondo celeste */
+  margin: 0;
+  padding: 0;
+  color: #223255;
+}
+
+header {
+  background-color: #EB9578; /* Fondo rosa para el título */
+  color: #23305C;
+  text-align: center;
+  padding: 10px;
+  border-top-left-radius: 10px; /* Redondear la esquina superior izquierda del título */
+  border-top-right-radius: 10px; /* Redondear la esquina superior derecha del título */
+  border-bottom: 5px solid #8793eb; /* Añadido borde inferior con el color de fondo de la página */
+  margin: 10px; /* Añadido margen general alrededor del título */
+  font-family: 'Brush Script MT';
+  font-size: 1.5em;
+  
+}
+
+#contenedor {
+  display: flex;
+  margin: 10px;
+}
+
+#informacion-general {
+  font-family: Arial, Helvetica, sans-serif;
+  flex: 0.5;
+  padding: 20px;
+  background-color: #EB7D74; /* Fondo naranja para la sección de información */
+  border-radius: 10px;
+  margin-right: 10px;
+  min-height: calc(100vh - 40px); /* Altura mínima del 100% del viewport menos márgenes y padding */
+}
+
+#contenido-secreto {
+  flex: 1.5;
+  background-color: #EBD898; /* Fondo amarillo para la sección de top secret */
+  text-align: center;
+  padding: 20px;
+  color: #000;
+  border-radius: 10px;
+  min-height: calc(100vh - 40px); /* Altura mínima del 100% del viewport menos márgenes y padding */
+  position: relative;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+#mensaje-secreto {
+  position: absolute;
+  top: 45%; /* Centrar verticalmente */
+  left: 35%; /* Centrar horizontalmente */
+  background-color: #EBD898; /* Mismo color de fondo para el mensaje secreto */
+  color: #FF0000; /* Color rojo para el texto Top Secret */
+  text-align: center;
+  transform: rotate(-30deg); /* Texto rotado diagonalmente */
+  white-space: nowrap; /* Evitar que el texto se desborde en varias líneas */
+  font-size: 2em; /* Tamaño de fuente más grande */
+  font-family: Courier;/*Asignar la fuente a top secret*/
+  
+  width: 400px; /* Ancho del cuadro "Top Secret" */
+  border: 8px solid #FF0000; /* Borde rojo de 2 píxeles alrededor del contenido secreto */
+}
+
+.pestañas {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.pestaña {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.pestaña:nth-child(1) {
+  background-color: #C549EB; /* Color para la pestaña 1 */
+  color: #223255;
+}
+
+.pestaña:nth-child(2) {
+  background-color: #ECB86C; /* Color para la pestaña 2 */
+  color: #223255;
+}
+
+.pestaña:nth-child(3) {
+  background-color: #63AAEB; /* Color para la pestaña 3 */
+  color: #223255;
+}
+
+.pestaña:nth-child(4) {
+  background-color: #ED928E; /* Color para la pestaña 3 */
+  color: #223255;
+}
+
+.pestaña:nth-child(5) {
+  background-color: #A3EABE; /* Color para la pestaña 3 */
+  color: #223255;
+}
+
+.contenido-pestaña {
+  display: none;
+  border-radius: 0 0 10px 10px;
+  margin-top: 10px;
+}
+
+.contenido-pestaña.activo {
+  display: block;
+}
